@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>z-index</title>
+    <style>
+
+
+.img {
+    position: absolute;
+    z-index: 0; 
+    left: 0;
+    top: 0;
+    width: 400px;
+    height: 400px;
+}
+
+.title-text {
+    position: absolute;
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+.button { 
+    position: fixed; 
+    bottom: 20px; 
+    right: 20px; 
+    background: orange;
+}
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <img src="C:\Users\HP\Downloads\assignment1\w - Copy.jpg" alt="Img" class="img">
+    
+    <h1 class="title-text"> hallo world</h1>
+    <button class="button">back to top</button>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        .box{
+            position: relative;
+            animation: move 2s;
+            width: 100px;
+            height: 100px;
+            background-color: goldenrod
+        }
+            @keyframes move {
+              from{
+                left:0%;
+              } 
+              to{
+                left:100%;
+            }
+        }
+        .hd{
+            animation: head 4s ease-in forwards;
+            opacity: 0;
+        }
+        @keyframes head {
+            from{
+                opacity: 0;
+            }
+            to{
+                opacity: 1;
+            }
+        }
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color: purple;
+        animation: spin 2s linear infinite;
+        position: fixed;
+left: 45%;
+top:20%;
+        }
+        @keyframes spin{
+            from{
+                transform: rotate(0deg);
+            }
+to {
+    transform: rotate(360deg);
+}
+        }
+        .key{
+            padding: 20px 35px;
+            font-size: 18px;
+            background-color: blueviolet;
+            color: white;
+            
+        }
+        .key:hover{
+animation: key 0.5s;
+left: 400px;
+        }
+        @keyframes key {
+            0%{ 
+                transform: scale(1);
+            }
+            100%{
+                transform: scale(1.05);
+            }
+        }
+        /*red to blue*/
+        .bg{
+        background-color: red;
+            width: 100px;
+            height: 100px;
+            animation: bg 1s linear infinite;
+        }
+        @keyframes bg {
+            form{
+                background-color: red;
+            }
+            to {
+                background-color: blue;
+            }
+        }
+        .pbg{
+            width: 100px;
+            height: 100px;
+            position: relative;
+            animation: pbg 1s infinite alternate;
+            position: fixed;
+            left: 500px;
+            top: 10%;
+        }
+        @keyframes pbg{
+            0%{
+                top: 0;
+            }
+            100%{
+                top: 500px;
+            }
+        }
+        p{
+        animation: slideIn 2s ease-out;
+        }
+        @keyframes slideIn {
+            from{
+                transform: translateX(-100%);
+
+            }
+            to{
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1 class="hd"> welcome to my website</h1>
+    <div class="box"></div>
+    <div class="box2"></div>
+    <button class="key">click here</button>
+    <div class="bg"></div>
+    <img src="C:\Users\HP\Downloads\transition\1347135.png" alt="bouncing image" class="pbg">
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati voluptates itaque quasi sint illo expedita molestiae, deserunt suscipit adipisci sunt?</p>
+
+
+
+</body>
+</html>
